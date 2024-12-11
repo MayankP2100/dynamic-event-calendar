@@ -1,0 +1,31 @@
+:root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100svh;
+  width: 100vw;
+  font-size: 1.5rem;
+  margin:0;
+}
+
+.lily-script-one-regular {
+  font-family: "Lily Script One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100svh;
+    font-size: 1rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+}
