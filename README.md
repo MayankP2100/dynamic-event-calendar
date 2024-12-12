@@ -72,4 +72,4 @@ These steps will help you set up, run, and preview the dynamic event calendar ap
 
 You can access the deployed version of the dynamic event calendar application at the following link:
 
-[Dynamic Event Calendar](https://dynamic-event-calendar-o48q.vercel.app/)
+[Dynamic Event Calendar](https://dynamic-event-calendar-five.vercel.app/)
