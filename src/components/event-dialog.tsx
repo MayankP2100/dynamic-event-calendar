@@ -69,7 +69,7 @@ export function EventDialog({
           onClick={() => setSelectedDate(day)}
           variant="outline"
           className={clsx(
-            "border rounded-md p-2 w-full h-20 flex flex-col justify-between lily-script-one-regular text-lg",
+            "border rounded-md w-full h-20 flex flex-col justify-between lily-script-one-regular text-lg",
             {
               "bg-blue-300": isWeekend(day),
               "bg-gray-200": isToday(day),

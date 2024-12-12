@@ -107,7 +107,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col justify-between items-center border-2 w-screen py-2 min-h-svh">
+      <div className="flex flex-col justify-between items-center w-screen py-2 min-h-svh">
         <h1 className="text-4xl lily-script-one-regular">
           Dynamic Event Calendar
         </h1>
