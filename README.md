@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# Summary of the features
+## Calendar Navigation
+- **"Previous"** and **"Next"** buttons to navigate the calendar by months.
+- Click on a day to manage events
+  * **"Add new event"** tab allows users to add new events by specifying the event name, date, and description.
+  * **"Edit event"** tab allows users to modify and delete existing events.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Event Management
+- Users can view a list of all events for a selected day by clicking on **"See All Events"** button.
+<!-- - Events are color-coded based on their type (e.g., meeting, birthday, holiday). -->
+- Users can search for events by name or date.
 
-Currently, two official plugins are available:
+## Exporting Events
+- Users can export events to a JSON or CSV file format.
+- The exported JSON or CSV file includes formatted data for event name, date and description.
+- Users can export events for a specific month from the calendar input.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Event Indicators
+- Green dots are displayed on calendar dates to indicate the number of events assigned to that date.
+  * One green dot represents one event.
+  * Multiple green dots represent multiple events.
+- This visual indicator helps users quickly identify dates with scheduled events.
+- Users can click on these dates to view detailed information about the events.
 
-## Expanding the ESLint configuration
+## Event Time Collision
+- The system checks for time collisions when adding or editing events.
+- If a time collision is detected, users are prompted with a warning message.
+- This feature ensures that no two events overlap in time, helping users manage their schedules more effectively.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Responsiveness
+- The calendar is fully responsive and adapts to various screen sizes.
+- On smaller screens, the calendar layout adjusts to ensure usability and readability.
+- Buttons and interactive elements are optimized for touch devices.
+- The design ensures that users have a consistent experience across desktops, tablets, and smartphones.
 
-- Configure the top-level `parserOptions` property like this:
+# Instructions to Run the App Locally
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone the repository:**
+  ```sh
+  git clone https://github.com/MayankP2100/dynamic-event-calendar.git
+  cd dynamic-event-calendar
+  ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Install dependencies:**
+  ```sh
+  npm install
+  ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. **Start the development server:**
+  ```sh
+  npm run dev
+  ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. **Open your browser and navigate to:**
+  ```
+  http://localhost:8000
+  ```
+
+5. **Build the app for production:**
+  ```sh
+  npm run build
+  ```
+
+6. **Preview the app:**
+  ```sh
+  npm run preview
+  ```
+
+These steps will help you set up, run, and preview the dynamic event calendar application on your local machine.
+
+# Access the Deployed App
+
+You can access the deployed version of the dynamic event calendar application at the following link:
+
+[Dynamic Event Calendar](https://dynamic-event-calendar-o48q.vercel.app/)
